@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Color Properties</title>
+
+    <style>
+        /* 1. Color Name */
+        .color-name {
+            color: red;
+        }
+
+        /* 2. HEX Color */
+        .hex-color {
+            color: #0000FF;
+        }
+
+        /* 3. RGB Color */
+        .rgb-color {
+            color: rgb(0, 128, 0);
+        }
+
+        /* 4. RGBA Color */
+        .rgba-color {
+            color: rgba(255, 0, 0, 0.5);
+        }
+
+        /* 5. HSL Color */
+        .hsl-color {
+            color: hsl(240, 100%, 50%);
+        }
+
+        /* 6. HSLA Color */
+        .hsla-color {
+            color: hsla(120, 100%, 40%, 0.7);
+        }
+
+        /* 7. Background Color */
+        .background {
+            background-color: yellow;
+            color: black;
+            padding: 10px;
+        }
+
+        /* 8. Opacity */
+        .opacity {
+            background-color: purple;
+            color: white;
+            padding: 10px;
+            opacity: 0.5;
+        }
+
+        /* 9. Current Color */
+        .current {
+            color: blue;
+            border: 3px solid currentColor;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1 class="color-name">Color Name - Red</h1>
+
+    <h1 class="hex-color">HEX Color - Blue</h1>
+
+    <h1 class="rgb-color">RGB Color - Green</h1>
+
+    <h1 class="rgba-color">RGBA Color - Red with Transparency</h1>
+
+    <h1 class="hsl-color">HSL Color - Blue</h1>
+
+    <h1 class="hsla-color">HSLA Color - Green with Transparency</h1>
+
+    <p class="background">
+        Background Color - Yellow
+    </p>
+
+    <p class="opacity">
+        Opacity - Purple with 50% Transparency
+    </p>
+
+    <div class="current">
+        CurrentColor - Blue Text and Blue Border
+    </div>
+
+</body>
+</html>
