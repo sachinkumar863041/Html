@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Display Property</title>
+
+    <style>
+        /* Block */
+        .block {
+            display: block;
+            background-color: lightblue;
+            padding: 10px;
+            margin: 5px;
+        }
+
+        /* Inline */
+        .inline {
+            display: inline;
+            background-color: lightgreen;
+            padding: 10px;
+        }
+
+        /* Inline-Block */
+        .inline-block {
+            display: inline-block;
+            background-color: orange;
+            width: 150px;
+            height: 50px;
+            padding: 10px;
+            margin: 5px;
+        }
+
+        /* None */
+        .none {
+            display: none;
+        }
+
+        /* Flex */
+        .flex {
+            display: flex;
+            gap: 10px;
+            background-color: lightgray;
+            padding: 10px;
+        }
+
+        .flex div {
+            background-color: pink;
+            padding: 20px;
+        }
+
+        /* Grid */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .grid div {
+            background-color: violet;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>CSS Display Property</h1>
+
+    <h2>1. Block</h2>
+    <div class="block">Block Element</div>
+
+    <h2>2. Inline</h2>
+    <span class="inline">Inline Element</span>
+    <span class="inline">Another Inline Element</span>
+
+    <h2>3. Inline-Block</h2>
+    <div class="inline-block">Inline-Block 1</div>
+    <div class="inline-block">Inline-Block 2</div>
+
+    <h2>4. None</h2>
+    <div class="none">You cannot see me</div>
+
+    <h2>5. Flex</h2>
+    <div class="flex">
+        <div>Box 1</div>
+        <div>Box 2</div>
+        <div>Box 3</div>
+    </div>
+
+    <h2>6. Grid</h2>
+    <div class="grid">
+        <div>Box 1</div>
+        <div>Box 2</div>
+        <div>Box 3</div>
+        <div>Box 4</div>
+        <div>Box 5</div>
+        <div>Box 6</div>
+    </div>
+
+</body>
+</html>
