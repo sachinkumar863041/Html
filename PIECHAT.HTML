@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Pie Chart</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            text-align: center;
+        }
+
+        .chart {
+            width: 400px;
+            height: 400px;
+            border-radius: 50%;
+
+            background: conic-gradient(
+                #ffe99c 0deg 46deg,
+                #ffe99c 46deg 100deg,
+                #ffe99c 100deg 261deg,
+                #ffe99c 261deg 345deg,
+                #ffe99c 345deg 360deg
+            );
+
+            border: 8px solid orange;
+            margin: 50px auto;
+            position: relative;
+        }
+
+        .line {
+            position: absolute;
+            width: 5px;
+            height: 200px;
+            background: orange;
+            left: 50%;
+            top: 0;
+            transform-origin: bottom;
+        }
+
+        .line1 {
+            transform: rotate(40deg);
+        }
+
+        .line2 {
+            transform: rotate(100deg);
+        }
+
+        .line3 {
+            transform: rotate(180deg);
+        }
+
+        .line4 {
+            transform: rotate(270deg);
+        }
+
+        .text {
+            position: absolute;
+            color: green;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .t1 {
+            top: 50px;
+            left: 180px;
+        }
+
+        .t2 {
+            top: 140px;
+            right: 20px;
+        }
+
+        .t3 {
+            bottom: 80px;
+            right: 50px;
+        }
+
+        .t4 {
+            bottom: 120px;
+            left: 30px;
+        }
+
+        .t5 {
+            top: 100px;
+            left: 30px;
+        }
+
+        .students {
+            color: blue;
+            font-size: 16px;
+            font-weight: normal;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Student Marks Distribution</h2>
+
+    <div class="chart">
+
+        <div class="line line1"></div>
+        <div class="line line2"></div>
+        <div class="line line3"></div>
+        <div class="line line4"></div>
+
+        <div class="text t1">
+            &gt;0 &amp; &lt;35
+            <div class="students">12 students</div>
+        </div>
+
+        <div class="text t2">
+            &gt;35 &amp; &lt;55
+            <div class="students">14 students</div>
+        </div>
+
+        <div class="text t3">
+            &gt;55 &amp; &lt;75
+            <div class="students">42 students</div>
+        </div>
+
+        <div class="text t4">
+            &gt;76 &amp; &lt;90
+            <div class="students">22 students</div>
+        </div>
+
+        <div class="text t5">
+            &gt;91 &amp; &lt;100
+            <div class="students">4 students</div>
+        </div>
+
+    </div>
+
+</body>
+</html>

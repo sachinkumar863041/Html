@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Overlapping Boxes</title>
+
+    <style>
+        body {
+            margin: 0;
+            background-color: white;
+        }
+
+        .container {
+            width: 800px;
+            height: 700px;
+            position: relative;
+            margin: 20px auto;
+        }
+
+        .box {
+            width: 240px;
+            height: 200px;
+            border-radius: 40px;
+            position: absolute;
+            box-sizing: border-box;
+        }
+
+        /* Top box */
+        .box1 {
+            top: 20px;
+            left: 70px;
+            background-color: #fff0a3;
+            border: 10px solid #df3030;
+        }
+
+        /* Middle box */
+        .box2 {
+            top: 165px;
+            left: 200px;
+            background-color: #9ed2f5;
+            border: 10px solid #f28c00;
+        }
+
+        /* Left box */
+        .box3 {
+            top: 285px;
+            left: 55px;
+            background-color: #a9edb1;
+            border: 10px solid #1674b9;
+        }
+
+        /* Right box */
+        .box4 {
+            top: 275px;
+            left: 410px;
+            background-color: #a9edb1;
+            border: 10px solid #269b45;
+        }
+
+        /* Bottom box */
+        .box5 {
+            top: 440px;
+            left: 215px;
+            background-color: #ffc4c4;
+            border: 10px solid #222222;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="box box1"></div>
+
+        <div class="box box2"></div>
+
+        <div class="box box3"></div>
+
+        <div class="box box4"></div>
+
+        <div class="box box5"></div>
+
+    </div>
+
+</body>
+</html>

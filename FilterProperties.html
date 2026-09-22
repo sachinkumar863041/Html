@@ -1,0 +1,108 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Filter Properties</title>
+
+    <style>
+        .container {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        img {
+            width: 200px;
+            height: 150px;
+            object-fit: cover;
+        }
+
+        .blur {
+            filter: blur(5px);
+        }
+
+        .brightness {
+            filter: brightness(150%);
+        }
+
+        .contrast {
+            filter: contrast(200%);
+        }
+
+        .grayscale {
+            filter: grayscale(100%);
+        }
+
+        .sepia {
+            filter: sepia(100%);
+        }
+
+        .saturate {
+            filter: saturate(200%);
+        }
+
+        .opacity {
+            filter: opacity(50%);
+        }
+
+        .invert {
+            filter: invert(100%);
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>CSS Filter Properties</h2>
+
+    <div class="container">
+
+        <div>
+            <p>Normal</p>
+            <img src="https://picsum.photos/id/1015/300/200">
+        </div>
+
+        <div>
+            <p>Blur</p>
+            <img class="blur" src="https://picsum.photos/id/1015/300/200">
+        </div>
+
+        <div>
+            <p>Brightness</p>
+            <img class="brightness" src="https://picsum.photos/id/1015/300/200">
+        </div>
+
+        <div>
+            <p>Contrast</p>
+            <img class="contrast" src="https://picsum.photos/id/1015/300/200">
+        </div>
+
+        <div>
+            <p>Grayscale</p>
+            <img class="grayscale" src="https://picsum.photos/id/1015/300/200">
+        </div>
+
+        <div>
+            <p>Sepia</p>
+            <img class="sepia" src="https://picsum.photos/id/1015/300/200">
+        </div>
+
+        <div>
+            <p>Saturate</p>
+            <img class="saturate" src="https://picsum.photos/id/1015/300/200">
+        </div>
+
+        <div>
+            <p>Opacity</p>
+            <img class="opacity" src="https://picsum.photos/id/1015/300/200">
+        </div>
+
+        <div>
+            <p>Invert</p>
+            <img class="invert" src="https://picsum.photos/id/1015/300/200">
+        </div>
+
+    </div>
+
+</body>
+</html>
